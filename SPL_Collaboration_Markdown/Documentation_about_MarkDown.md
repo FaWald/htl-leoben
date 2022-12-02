@@ -47,6 +47,17 @@ Kopfzeile H1 (Version 2)
 
 ## Trennstriche ##
 ## hervorgehoben/betonte Wörter - kursiv, fett (alternative Möglichkeiten) ## 
+
+**fettgedruckter Text**
+```Markdown
+**fettgedruckter Text**
+```
+
+*kursiver Text*
+```Markdown
+*kursiver Text*
+```
+
 ## Aufzählungen mit und ohne Unterpunkte, in verschiedenen Ebenen - geordnet/ungeordnet (mit unterschiedlichen Zeichen) ## 
 
 *   Rot
@@ -90,6 +101,13 @@ Kopfzeile H1 (Version 2)
 ```
 
 ## Links, mit Text Angabe ##
+
+[title](https://www.example.com)
+
+```Markdown
+[title](https://www.example.com)
+```
+
 ## Quellcode Angabe - mit und ohne Syntax Highlighting ##
 
 ```Markdown
