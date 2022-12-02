@@ -1,2 +1,2 @@
 # htl-leoben
-A Repository for the School
+A repository for the school
