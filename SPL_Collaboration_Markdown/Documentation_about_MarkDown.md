@@ -45,5 +45,82 @@ Kopfzeile H1 (Version 2)
 ###### Dies ist ein H6 ######
 ```
 
-## Zitate ##
+## Trennstriche ##
+## hervorgehoben/betonte Wörter - kursiv, fett (alternative Möglichkeiten) ## 
+## Aufzählungen mit und ohne Unterpunkte, in verschiedenen Ebenen - geordnet/ungeordnet (mit unterschiedlichen Zeichen) ## 
 
+*   Rot
+*   Grün
+*   Blau
+
+```Markdown
+*   Rot
+*   Grün
+*   Blau
+```
+
++   Rot
++   Grün
++   Blau
+
+```Markdown
++   Rot
++   Grün
++   Blau
+```
+
+-   Rot
+-   Grün
+-   Blau
+
+```Markdown
+-   Rot
+-   Grün
+-   Blau
+```
+
+1.  Hund
+2.  Katze
+3.  Maus
+
+```Markdown
+1.  Hund
+2.  Katze
+3.  Maus
+```
+
+## Links, mit Text Angabe ##
+## Quellcode Angabe - mit und ohne Syntax Highlighting ##
+
+```Markdown
+    ```Markdown
+    ```
+```
+
+## Tabellen mit unterschiedlicher Text Ausrichtung ## 
+## Bilder, mit Text Angabe ## 
+## Blockzitate ##
+
+
+> Dies ist ein Zitat. Lorem ipsum dolor sit amet,
+
+```Markdown
+> Dies ist ein Zitat. Lorem ipsum dolor sit amet,
+```
+
+> Dies ist ein Zitat mit zwei Absätzen. Lorem ipsum dolor sit amet,
+>
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+
+```Markdown
+> Dies ist ein Zitat mit zwei Absätzen. Lorem ipsum dolor sit amet,
+>
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+```
+
+## Fußnoten ## 
+## Task Listen ## 
+## durchgestrichene Absätze ## 
+## Text Highlighting ## 
+## hochgestellte und tiefgestellte Zeichen ## 
+## deaktivierte URL-Verknüpfungen ## 
