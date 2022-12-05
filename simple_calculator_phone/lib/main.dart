@@ -10,6 +10,25 @@ void main() {
 class HomeActivity extends StatefulWidget {
   const HomeActivity({Key? key}) : super(key: key);
 
+
+  //Lets create our Button widget
+  Widget CalcBtn(String Btnval) {
+    return Expanded(
+      child: Container(
+        margin: EdgeInsets.all(10.0),
+        decoration: BoxDecoration(
+          color: Colors.grey[300],
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey[500],
+              offset: Offset(2.0, 2.0),
+            )
+          ]
+        ),
+      ),
+    )
+  }
+
   @override
   State<HomeActivity> createState() => _HomeActivityState();
 }
@@ -40,7 +59,6 @@ class _HomeActivityState extends State<HomeActivity> {
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-
                     ],
                   ),
 
