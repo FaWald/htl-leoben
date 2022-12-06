@@ -20,13 +20,15 @@ class HomeActivity extends StatefulWidget {
           color: Colors.grey[300],
           boxShadow: [
             BoxShadow(
-              color: Colors.grey[500],
+              color: Colors.grey,
               offset: Offset(2.0, 2.0),
-            )
+              blurRadius: 0.0,
+              spreadRadius: 1.0
+            ),
           ]
         ),
       ),
-    )
+    );
   }
 
   @override
