@@ -100,6 +100,92 @@ Kopfzeile H1 (Version 2)
 3.  Maus
 ```
 
+(1) Listenbeispiel Zahl in Klammern
+(2) Zweiter Eintrag
+
+```Markdown
+(1) Listenbeispiel Zahl in Klammern
+(2) Zweiter Eintrag
+```
+
+a. Listenbeispiel Buchstaben
+b. Zweiter Eintrag
+
+```Markdown
+a. Listenbeispiel Buchstaben
+b. Zweiter Eintrag
+```
+
+A) Liste mit nur einer Klammer und großen Buchstaben
+B) Zweiter Eintrag
+
+```Markdown
+A) Liste mit nur einer Klammer und großen Buchstaben
+B) Zweiter Eintrag
+```
+
+- Listenbeispiel Ebenenanzahl
+- Lorem ipsum
+    - Beispiel
+    - Beispiel II
+        - Bis zur Unendlichkeit...
+            - Und noch viel weiter!
+                - Oder?
+                    - Einfach mal ausprobieren...
+                        - Noch ein Schritt...
+                            - Und noch ein Schritt...
+                                - Ebene weiter.
+                                    - Jetzt aber mal aufhören, das sprengt sonst irgendwann den Rahmen.
+
+```Markdown
+- Listenbeispiel Ebenenanzahl
+- Lorem ipsum
+    - Beispiel
+    - Beispiel II
+        - Bis zur Unendlichkeit...
+            - Und noch viel weiter!
+                - Oder?
+                    - Einfach mal ausprobieren...
+                        - Noch ein Schritt...
+                            - Und noch ein Schritt...
+                                - Ebene weiter.
+                                    - Jetzt aber mal aufhören, das sprengt sonst irgendwann den Rahmen.
+```
+
+1. Zahlen-Liste 1
+2. Zahlen-Liste 2
+    - ein unsortierter Unterpunkt
+3. Zahlen-Liste 3 geht weiter
+4. Zahlen-Liste 4
+   a) Buchstaben-Liste a
+   b) Buchstaben-Liste b
+   - unsortierte liste
+   i. römische Ziffer I
+   ii. römische ziffer II
+   c) Buchstaben-Liste c
+   #. Sonderzeichen 1
+   #. Sonderzeichen 2
+5. Zahlen-Liste 5
+
+```Markdown
+1. Zahlen-Liste 1
+2. Zahlen-Liste 2
+    - ein unsortierter Unterpunkt
+3. Zahlen-Liste 3 geht weiter
+4. Zahlen-Liste 4
+   a) Buchstaben-Liste a
+   b) Buchstaben-Liste b
+    - unsortierte liste
+      i. römische Ziffer I
+      ii. römische ziffer II
+      c) Buchstaben-Liste c
+      #. Sonderzeichen 1
+      #. Sonderzeichen 2
+5. Zahlen-Liste 5
+```
+
+
+
 ## Links, mit Text Angabe ##
 
 [title](https://www.example.com)
@@ -141,4 +227,17 @@ Kopfzeile H1 (Version 2)
 ## durchgestrichene Absätze ## 
 ## Text Highlighting ## 
 ## hochgestellte und tiefgestellte Zeichen ## 
+
+Hochgestellter^Text^
+
+```Markdown
+Hochgestellter^Text^
+```
+
+Untergestellter~Text~
+
+```Markdown
+Untergestellter~Text~
+```
+
 ## deaktivierte URL-Verknüpfungen ## 
