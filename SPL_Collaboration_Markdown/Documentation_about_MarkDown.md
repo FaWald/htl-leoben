@@ -196,13 +196,151 @@ B) Zweiter Eintrag
 
 ## Quellcode Angabe - mit und ohne Syntax Highlighting ##
 
+### Syntax Highlighting ###
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
 ```Markdown
-    ```Markdown
+    ```javascript
+    var s = "JavaScript syntax highlighting";
+    alert(s);
+    ```
+```
+
+### Ohne Syntax Highlighting ###
+
+```Markdown
+    ```
     ```
 ```
 
 ## Tabellen mit unterschiedlicher Text Ausrichtung ## 
+
+### Tabelle mit Kopfzeile
+
+Spalte links              Spalte rechts    Spalte mittig
+-----------------   ------------------- -------------------
+Zeile 1             Zeile 1             Zeile 1
+Zeile 2             Zeile 2             Zeile 2
+Zeile 3             Zeile 3             Zeile 3
+
+### Tabelle ohne Kopfzeile
+
+-       -         -  
+Zeile 1 Zeile 1   Zeile 1
+Zeile 2 Zeile 2   Zeile 2
+Zeile 3 Zeile 3   Zeile 3
+-       -         -
+
+```Markdown
+### Tabelle mit Kopfzeile
+
+Spalte links              Spalte rechts    Spalte mittig
+-----------------   ------------------- -------------------
+Zeile 1             Zeile 1             Zeile 1
+Zeile 2             Zeile 2             Zeile 2
+Zeile 3             Zeile 3             Zeile 3
+
+### Tabelle ohne Kopfzeile
+
+-       -         -  
+Zeile 1 Zeile 1   Zeile 1
+Zeile 2 Zeile 2   Zeile 2
+Zeile 3 Zeile 3   Zeile 3
+-       -         -
+```
+
+### Multiline mit Kopfzeile
+
+--------------------------------------------------------
+Spalte links       Spalte rechts   Spalte mittig
+---------------- ---------------- ----------------------
+In dieser Zelle\   Hier nicht!     In dieser Zelle wird
+werden zwei\                       kein Umbruch gewagt,
+Umbrüche gewagt.                   aber mehr Text
+geschrieben.
+
+Zeile 2          Zeile 2          Zeile 2
+
+Hier wird eine\    Hier  nicht!    Hier auch nicht!
+Zeile gebrochen.
+--------------------------------------------------------
+
+### Multiline ohne Kopfzeile
+
+---------------- ---------------- ----------------------
+In dieser Zelle\   Hier nicht!     In dieser Zelle wird
+werden zwei\                       kein Umbruch gewagt,
+Umbrüche gewagt.                   aber mehr Text
+geschrieben.
+
+Zeile 2          Zeile 2          Zeile 2
+
+Hier wird eine\    Hier  nicht!    Hier auch nicht!
+Zeile gebrochen.
+---------------- ---------------- ----------------------
+
+```Markdown
+###Multiline mit Kopfzeile
+
+--------------------------------------------------------
+Spalte links       Spalte rechts   Spalte mittig
+---------------- ---------------- ----------------------
+In dieser Zelle\   Hier nicht!     In dieser Zelle wird 
+werden zwei\                       kein Umbruch gewagt, 
+Umbrüche gewagt.                   aber mehr Text 
+                                   geschrieben.      
+
+Zeile 2          Zeile 2          Zeile 2
+
+Hier wird eine\    Hier  nicht!    Hier auch nicht!
+Zeile gebrochen.
+--------------------------------------------------------
+
+###Multiline ohne Kopfzeile
+
+---------------- ---------------- ----------------------
+In dieser Zelle\   Hier nicht!     In dieser Zelle wird 
+werden zwei\                       kein Umbruch gewagt, 
+Umbrüche gewagt.                   aber mehr Text 
+                                   geschrieben. 
+                                   
+Zeile 2          Zeile 2          Zeile 2
+
+Hier wird eine\    Hier  nicht!    Hier auch nicht!
+Zeile gebrochen.
+---------------- ---------------- ----------------------
+```
+
 ## Bilder, mit Text Angabe ## 
+
+### Zwei Bilder mit Alternativtext
+
+![Foto einer Pyramide](bilder/pyramide.jpg)
+
+![Foto einer Pyramide][Beispielfoto]
+
+[Beispielfoto]: bilder/pyramide.jpg
+
+```Markdown
+![Foto einer Pyramide](bilder/pyramide.jpg)
+
+![Foto einer Pyramide][Beispielfoto]
+
+[Beispielfoto]: bilder/pyramide.jpg
+```
+
+### Ausgelagerte Bildbeschreibung
+
+[![Bildbeschreibung ausgelagert](bilder/pyramide.jpg)](bilder.html#beispiel-pyramide)
+
+```Markdown
+[![Bildbeschreibung ausgelagert](bilder/pyramide.jpg)](bilder.html#beispiel-pyramide)
+```
+
 ## Blockzitate ##
 
 
@@ -223,9 +361,56 @@ B) Zweiter Eintrag
 ```
 
 ## Fußnoten ## 
+
+### Einfache Fußnote ###
+
+Dies ist ein Beispieltest mit Fußnoten[^1].\
+Hier befinden sich die beiden Links zum Inhalt der jeweiligen[^2] Fußnoten.
+
+```Markdown
+Dies ist ein Beispieltest mit Fußnoten[^1].\
+Hier befinden sich die beiden Links zum Inhalt der jeweiligen[^2] Fußnoten.
+```
+
+### Andere Variante ###
+
+[^1]: Diese Fußnote wird als erstes gesetzt und hat rechts einen Backlink.
+
+[^2]: Dies ist die zweite Fußnote.
+
+```Markdown
+[^1]: Diese Fußnote wird als erstes gesetzt und hat rechts einen Backlink.
+
+[^2]: Dies ist die zweite Fußnote.
+```
+
 ## Task Listen ## 
+
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+
+```Markdown
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+```
+
 ## durchgestrichene Absätze ## 
+That is ~~not~~ a text.
+
+```Markdown
+That is ~~not~~ a text.
+```
+
 ## Text Highlighting ## 
+
+I need to highlight these ==very important words==.
+
+```Markdown
+I need to highlight these ==very important words==.
+```
+
 ## hochgestellte und tiefgestellte Zeichen ## 
 
 Hochgestellter^Text^
@@ -240,4 +425,9 @@ Untergestellter~Text~
 Untergestellter~Text~
 ```
 
-## deaktivierte URL-Verknüpfungen ## 
+
+## Quelle ##
+https://elvis.inf.tu-dresden.de/wiki/index.php/Markdown_-_Eine_%C3%9Cbersicht
+https://www.markdownguide.org/extended-syntax/
+
+
